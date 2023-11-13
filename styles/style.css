@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Agbalumo', sans-serif;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1.2px solid grey;
+    background-color: #FFFFFF;
+   
+  
+ 
+    
+}
+
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12rem 1rem 12rem;
+
+}
+
+.headerIcon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.hamburguerIcon {
+    width: 3rem;
+    height: 3rem;
+    z-index: 3;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.hamburguerIcon:hover {
+    transform: scale(110%);
+}
+
+.dropdownMenu {
+    display: none; 
+  
+}
+
+.dropdownMenu a {
+    text-decoration: none;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  
+}
+/* essa class só vai ser adicionada pelo JavaScript, é uma class dinamica */
+
+
+.heroSection {
+    width: 100%;
+    position: relative;
+    
+}
+
+.Nightingale {
+    color: rgb(236, 236, 236);
+    font-size: 15rem;
+    margin-bottom: -15rem;
+    margin-top: -5rem;
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    animation: slidein 0.6s ease 0.2s 1 normal forwards;
+}
+
+@keyframes slidein {
+    from {
+      transform: translateY(-40%);
+    }
+  
+    to {
+      transform: translateY(10%);
+    }
+  }
+
+
+
+.heroFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+.flexImg {
+    z-index: 2;
+}
+
+
+
+.flexText {
+    width: 30%;
+    display: flex;
+    position: relative;
+    flex-direction: column; 
+    gap: 2rem;
+    align-items: center;
+ 
+}
+
+
+.flexText h1 {
+    font-size: 4rem;
+}
+
+.flexText p {
+    font-size: 1.5rem;
+    color: grey;
+    text-align: right;
+ 
+}
+
+.aboutBox {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+
+}
+
+
+.aboutBox .aboutFrame {
+    width: 83px;
+    height: 1px;
+    background-color: #333333;
+   
+}
+
+
+.buttonDiv {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttonDiv a {
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.buttonStarted {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+.buttonLearn {
+    background-color: #EBEBEB;
+    color: #333333;  
+
+}
+
+
+
+.slideshow {
+    width: 36rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out;
+    transition-timing-function: cubic-bezier(0.77,0,0.18,1);
+  }
+
+  .slide.active {
+    opacity: 1;
+    left: 0;
+  }
+
+  .frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+@media (max-width: 768px) {
+    .heroFlex {
+        flex-direction: column;
+        
+    }
+
+    .flexText  {
+        width: 80%;
+        align-items: center;
+
+    }
+
+    
+}
