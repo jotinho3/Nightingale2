@@ -188,8 +188,8 @@ header {
     position: absolute;
     top: 0;
     left: 100%;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out;
     transition-timing-function: cubic-bezier(0.77,0,0.18,1);
@@ -207,6 +207,46 @@ header {
     width: 100%;
     height: 100%;
   }
+
+
+
+.midSection {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.midSectionFlex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 28rem;
+}
+
+.midSectionTextFrame {
+    width: 20rem;
+    height: 2px;
+    background-color: #333333;
+}
+
+.midSectionText {
+    width: 30%;
+    display: flex;
+    position: relative;
+    flex-direction: column; 
+    gap: 2rem;
+    align-items: center;
+}
+
+.midSectionText h2 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.midSectionText p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #888888;
+}
+
 
 
 
